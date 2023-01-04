@@ -2,6 +2,22 @@
     font-family: 'Contrail One';
     src: url('http://themes.googleusercontent.com/static/fonts/contrailone/v3/b41KxjgiyqX-hkggANDU6InF5uFdDttMLvmWuJdhhgs.ttf') format('truetype');
 }
+nav li {
+    display: inline-block;
+    text-align: right;
+
+}
+nav a {
+    font-family: 'Contrail One ', Verdana, sans-serif;
+    text-decoration: none;
+    padding: 20px;
+    color: #fff;
+}
+.headersmall {
+    width: 1272px;
+    position: center;
+    border-radius: 10px;
+}
 .headerpic {
     height: 500px;
     width: 1272px;
@@ -9,15 +25,15 @@
     border-radius: 10px;
 }
 .logo {
-    height: 150px;
-}
-body {
-    background-color: #211e21;
+    height: 100px;
 }
 header {
     position: absolute;
     padding-left: 60px;
     padding-top: 20px;
+}
+body {
+    background-color: #211e21;
 }
 h1 {
     color: #810000;
@@ -36,18 +52,18 @@ p {
     font-family: 'Contrail One', Verdana, sans-serif;
     font-size: 18px;
     padding-top: 30px;
+    padding-left: 50px;
 }
-nav li {
+img {
     display: inline-block;
-    text-align: right;
-
-}
-nav a {
-    font-family: 'Contrail One ', Verdana, sans-serif;
-    text-decoration: none;
-    padding: 20px;
-    color: #fff;
+    padding: 10px;
 }
 .carousel {
     white-space: nowrap;
+}
+.contactpic {
+    width: 1272px;
+}
+li {
+    color: #fff;
 }
