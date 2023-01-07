@@ -19,9 +19,8 @@ nav a {
     margin-left: 30px;
 }
 header {
-    background-image: url('../images/headerpic.jpg');
+    background-image: url('../images/headerpic\ small.jpg');
     max-width: 1440px;
-    min-height: 560px;
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 10px;
@@ -29,31 +28,25 @@ header {
 }
 body {
     background-color: #211e21;
+    background-image: url(../images/contact\ page.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 1000px 600px;
 }
 h1 {
     color: #810000;
     font-family: 'Papyrus', Verdana, sans-serif;
     font-size: 60px;
     font-style: italic;
-    filter: drop-shadow(3px 3px 3px #211e21);
-}
-h3 {
-    color: #fff;
-    font-family: 'Contrail One', Verdana, sans-serif;
-    font-size: 15px;
+    margin-top: 50px;
+    text-align: center;
 }
 p {
     font-family: 'Contrail One', Verdana, sans-serif;
     color: #fff;
     position: overlay;
     font-size: 25px;
-    text-align: left;
-    filter: drop-shadow(3px 3px 3px #211e21);
-}
-.paragraf {
-    position: absolute;
-    bottom: 140px;
-    left: 40px;
+    text-align: center;
 }
 .footer {
     background: #746666;
@@ -69,7 +62,4 @@ p {
 img {
     display: inline-block;
     padding: 10px;
-}
-.carousel {
-    white-space: nowrap;
 }
