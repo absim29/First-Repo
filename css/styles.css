@@ -34,6 +34,7 @@ h1 {
     font-family: 'Papyrus', Verdana, sans-serif;
     font-size: 60px;
     font-style: italic;
+    filter: drop-shadow(3px 3px 3px #211e21);
 }
 h3 {
     color: #fff;
@@ -46,6 +47,7 @@ p {
     position: overlay;
     font-size: 25px;
     text-align: left;
+    filter: drop-shadow(3px 3px 3px #211e21);
 }
 .paragraf {
     position: absolute;
