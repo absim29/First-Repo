@@ -17,9 +17,8 @@ nav a {
     height: 100px;
 }
 header {
-    background-image: url('../images/headerpic.jpg');
+    background-image: url('../images/headerpic\ small.jpg');
     max-width: 1440px;
-    min-height: 560px;
     background-repeat: no-repeat;
     background-size: cover;
 }
