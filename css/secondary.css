@@ -14,13 +14,16 @@ nav a {
     color: #fff;
 }
 .logo {
-    height: 100px;
+    height: 150px;
+    margin-left: 30px;
 }
 header {
     background-image: url('../images/headerpic\ small.jpg');
     max-width: 1440px;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    border-radius: 10px;
+    float: top;
 }
 body {
     background-color: #211e21;
