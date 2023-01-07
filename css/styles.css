@@ -4,7 +4,7 @@
 }
 nav li {
     display: inline-block;
-    text-align: right;
+    font-size: 20px;
 
 }
 nav a {
@@ -32,11 +32,20 @@ body {
 h1 {
     color: #810000;
     font-family: 'Papyrus', Verdana, sans-serif;
+    font-size: 60px;
+    font-style: italic;
 }
 p {
     font-family: 'Contrail One', Verdana, sans-serif;
     color: #fff;
     position: overlay;
+    font-size: 25px;
+    text-align: left;
+}
+.paragraf {
+    position: absolute;
+    bottom: 140px;
+    left: 40px;
 }
 .footer {
     background: #746666;
@@ -56,9 +65,6 @@ img {
 .carousel {
     white-space: nowrap;
 }
-.contactpic {
-    width: 1272px;
-}
-li {
-    color: #fff;
+.topp {
+    font-size: 5px;
 }
