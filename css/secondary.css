@@ -58,3 +58,8 @@ img {
 li {
     color: #fff;
 }
+/* Contact page */
+input, select, textarea {
+    border: 1px solid #211e21;
+    border-radius: 5px;
+}
