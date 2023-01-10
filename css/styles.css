@@ -6,6 +6,9 @@
 nav li {
     display: block;
     float: right;
+    position: relative;
+    bottom: 70px;
+    right: 10px;
 }
 nav a {
     font-family: 'Contrail One ', Verdana, sans-serif;
@@ -13,6 +16,7 @@ nav a {
     padding: 20px;
     color: #fff;
     font-size: 20px;
+    font-weight: bold;
 }
 .logo {
     height: 150px;
@@ -23,7 +27,7 @@ header {
     max-width: 1440px;
     min-height: 560px;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     border-radius: 10px;
     float: top;
 }
@@ -67,10 +71,7 @@ p {
     padding-top: 30px;
     padding-left: 50px;
 }
-img {
-    display: inline-block;
-    padding: 10px;
-}
+
 .carousel {
     white-space: nowrap;
     overflow: hidden;
