@@ -4,7 +4,7 @@
 }
 @import url(//db.onlinewebfonts.com/c/8dbb836081059e0f2e81eeeaec207c19?family=Contrail+One);
 nav li {
-    display: inline-block;
+    display: block;
     float: right;
 }
 nav a {
@@ -59,7 +59,7 @@ p {
 .footer {
     background: #746666;
     height: 50px;
-    width: 1272px;
+    width: 1375px;
     text-align: left;
     color: #000000;
     font-family: 'Contrail One', Verdana, sans-serif;
@@ -73,4 +73,6 @@ img {
 }
 .carousel {
     white-space: nowrap;
+    overflow: hidden;
+    overflow: scroll;
 }
