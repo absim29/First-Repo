@@ -45,14 +45,24 @@ body {
     padding-left: 50px;
 }
 .containter {
-    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+.containter > * {
+    flex: 4;
 }
 .item {
-    flex: 1;
     padding: 10px;
 }
-@media only screen and (min-width: 600px){
+@media only screen and (max-width: 600px){
     .container {
-        flex-direction: row;
+        flex-direction: column;
+    }
+    header {
+        background-size: cover;
+    }
+    .logo {
+        height: 60px;
+        margin-left: 10px;
     }
 }

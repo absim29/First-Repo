@@ -36,17 +36,27 @@ body {
 h1 {
     color: #810000;
     font-family: 'Papyrus', Verdana, sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-style: italic;
-    margin-top: 50px;
-    text-align: center;
+    margin-top: 25px;
+    text-align: left;
+}
+h2 {
+    font-family: 'Contrail One', Verdana, sans-serif;
+    color: #fff;
+    font-size: 40px;
+    text-align: left;
 }
 p {
     font-family: 'Contrail One', Verdana, sans-serif;
     color: #fff;
-    position: overlay;
-    font-size: 25px;
-    text-align: center;
+    font-size: 20px;
+    text-align: left;
+}
+.img {
+    max-width: fit-content;
+    max-height: fit-content;
+    padding: 40px;
 }
 .footer {
     background: #746666;
@@ -59,21 +69,7 @@ p {
     padding-top: 30px;
     padding-left: 50px;
 }
-.movie {
-    float: right
-}
-a {
-    text-decoration: none;
-}
-/* Contact page form*/
-input, select, textarea {
-    border: 1px solid #211e21;
-    border-radius: 5px;
-    display: block;
-    padding: 20px;
-    margin-top: 20px;
-    margin-left: 50px;
-}
+
 .cta {
     background-color: #810000;
     color: #FEDE36;
@@ -82,9 +78,31 @@ input, select, textarea {
     font-weight: bold;
     padding: 20px 80px;
     border-radius: 10px;
+    border: #810000;
     filter: drop-shadow(1px 1px 1px #000);
+    margin-left: 47px;
 }
 .cta:hover {
     background-color: #FEDE36;
     color: #810000;
+}
+.containter {
+    display: flex;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.containter > * {
+    flex: 1;
+}
+@media only screen and (max-width: 600px){
+    .container {
+        flex-direction: column;
+    }
+    header {
+        background-size: cover;
+    }
+    .logo {
+        height: 60px;
+        margin-left: 10px;
+    }
 }
