@@ -45,11 +45,13 @@ body {
     padding-left: 50px;
 }
 .containter {
-    display: flex;
-    flex-wrap: wrap;
+    display: flexbox;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding-left: 40px;
 }
 .containter > * {
-    flex: 4;
+    flex: 1;
 }
 .item {
     padding: 10px;

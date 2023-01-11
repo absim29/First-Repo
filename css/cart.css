@@ -93,6 +93,9 @@ p {
     max-height: 170px;
     padding: 10px;
 }
+.cartimages {
+    display: flex;
+}
 .line {
     border: 1px solid #fff;
 }
