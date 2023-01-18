@@ -33,33 +33,26 @@ body {
     background-color: #211e21;
     min-height: 100vh;
     margin: 0px;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
 }
 h1 {
     color: #810000;
     font-family: 'Papyrus', Verdana, sans-serif;
-    font-size: 50px;
+    font-size: 60px;
     font-style: italic;
-    margin-top: 25px;
-    text-align: left;
+    margin-top: 50px;
+    text-align: center;
 }
 h2 {
-    font-family: 'Contrail One', Verdana, sans-serif;
     color: #fff;
-    font-size: 40px;
-    text-align: left;
+    font-family: 'Contrail One', Verdana, sans-serif;
+    font-size: 30px;
+    margin-left: 40px;
 }
 p {
     font-family: 'Contrail One', Verdana, sans-serif;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     text-align: left;
-}
-.img {
-    max-width: fit-content;
-    max-height: fit-content;
-    padding: 40px;
 }
 .footer {
     background: #746666;
@@ -72,7 +65,31 @@ p {
     padding: 15px;
     margin: 0px;
 }
-
+.movietable img{
+    display: inline-block;
+}
+.smallicon {
+    display: inline-block;
+    float: left;
+}
+.contactpic {
+    width: 1272px;
+}
+li {
+    color: #fff;
+}
+a {
+    text-decoration: none;
+}
+/* Contact page form*/
+input, select, textarea {
+    border: 1px solid #211e21;
+    border-radius: 5px;
+    display: block;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
 .cta {
     background-color: #810000;
     color: #FEDE36;
@@ -81,31 +98,22 @@ p {
     font-weight: bold;
     padding: 20px 80px;
     border-radius: 10px;
-    border: #810000;
     filter: drop-shadow(1px 1px 1px #000);
-    margin-left: 47px;
 }
 .cta:hover {
     background-color: #FEDE36;
     color: #810000;
 }
 .containter {
-    display: flex;
-    max-width: 1000px;
-    margin: 50px auto;
+    display: flexbox;
+    flex-direction: row;
 }
-.containter > * {
-    flex: 1;
+.item {
+    flex: 4;
+    padding: 10px;
 }
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 600px){
     .container {
-        flex-direction: column;
-    }
-    header {
-        background-size: cover;
-    }
-    .logo {
-        height: 60px;
-        margin-left: 10px;
+        flex-direction: row;
     }
 }
