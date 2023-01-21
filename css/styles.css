@@ -50,8 +50,11 @@ p {
     filter: drop-shadow(3px 3px 3px #211e21);
 }
 .paragraf {
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    margin-bottom: auto;
+    margin-top: -35%;
+    margin-left: 5%;
+
 }
 h3 {
     color: #fff;
