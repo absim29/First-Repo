@@ -29,6 +29,10 @@ nav a {
     font-weight: bold;
 }
 
+nav .currentpage {
+    text-decoration: underline;
+}
+
 .logo {
     width: min(18vw, 300px);
     margin: 10px 0px 0px 20px;
