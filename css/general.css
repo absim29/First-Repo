@@ -127,11 +127,16 @@ form > * {
     color: #FEDE36;
     font-size: 25px;
     font-family: 'verdana';
-    font-weight: bold;
+    font-weight: bold;   
     padding: 20px 80px;
     border-radius: 10px;
     border: #810000;
     filter: drop-shadow(1px 1px 1px #000);
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 .cta:hover {
