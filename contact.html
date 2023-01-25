@@ -11,14 +11,19 @@
 </head>
 <body>
   <header>
-    <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="SquareEyes - Connectingf Film-lovers" class="logo"></a>
     <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="SquareEyes - Connectingf Film-lovers" class="logo"></a>
         <ul>
-            <li><a href="cart.html">Cart</a></li>
-            <li><a href="contact.html" class="currentpage">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="videos.html">Videos</a></li>
-            <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="videos.html">Videos</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="currentpage">Contact</a></li>
+        <li><a href="cart.html">Cart</a></li>
         </ul>
     </nav>
   </header>
@@ -33,8 +38,8 @@
         <input type="text" id="email" name="email">
         <label class='text' for="message">Message</label>
         <textarea name="message" id="message" cols="22" rows="10"></textarea>
-        <input type="submit" value="SEND" name="send" class="cta">
     </form> 
+    <a href="success.html" class="cta">SEND</a>
     </div>
     <div class="contain-item">
         <img src="images/map.png" alt="Map with our pinpointed location">

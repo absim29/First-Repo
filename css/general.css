@@ -12,21 +12,36 @@ html, body {
 }
 
 /* Navigation - header section*/
-nav li {
-    display: block;
+nav ul { 
     float: right;
-    position: relative;
-    bottom: 70px;
-    right: 10px;
 }
 
-nav a {
+nav ul li {
+    display: inline-block;
+    line-height: 220px;
+}
+
+nav ul li a {
     font-family: 'Contrail One ', Verdana, sans-serif;
-    text-decoration: none;
     padding: 20px;
     color: #fff;
     font-size: 20px;
     font-weight: bold;
+}
+
+label #btn,
+label #cancel {
+    color: #fff;
+    font-size: 30px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
 }
 
 nav .currentpage {
@@ -53,6 +68,13 @@ body {
     margin: 0px;
     display: grid;
     grid-template-rows: auto 1fr auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
 
 /* Text styling */
@@ -137,6 +159,7 @@ form > * {
     border: #810000;
     filter: drop-shadow(1px 1px 1px #000);
     text-align: center;
+    margin: 10px;
 }
 
 a {
@@ -203,6 +226,11 @@ a {
     margin:auto;
 }
 
+.contain-item .cta {
+    margin-right: 5px;
+    margin-left: auto;
+}
+
 .movie-container {
     display: flex;
     max-width: 1400px;
@@ -229,13 +257,61 @@ a {
 }
 
 /* Media queries */
-@media only screen and (max-width: 600px) {
-    body {
-        margin: 8px;
+@media (max-width: 1130px) {
+    nav ul li {
+        line-height: 150px;
     }
-    .container, .cart-container {
+}
+
+@media (max-width: 900px) {
+    nav ul li {
+        line-height: 130px;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 750px) {
+    label #btn {
         display: block;
-        margin: auto;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        background: #211e21;
+        top: 80px;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }
+    #check:checked ~ label #btn {
+        display: none;
+    }
+    #check:checked ~ label #cancel {
+        display: block;
+    }
+    .container, .cart-container, .contain-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .line {
+        width: 100%;
     }
     .img {
         padding: 15px;
@@ -244,5 +320,8 @@ a {
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+    h1 {
+        margin-top: 20px;
     }
 }

@@ -10,18 +10,23 @@
     <script src="https://kit.fontawesome.com/40355c2075.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="SquareEyes - Connectingf Film-lovers" class="logo"></a>
-    <nav>
-        <ul>
-            <li><a href="cart.html" class="currentpage">Cart</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="videos.html">Videos</a></li>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            <a href="index.html"><img src="images/SquareEyes_Logo.png" alt="SquareEyes - Connectingf Film-lovers" class="logo"></a>
+            <ul>
             <li><a href="index.html">Home</a></li>
-        </ul>
-    </nav>
-  </header>
+            <li><a href="videos.html">Videos</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html" class="currentpage">Cart</a></li>
+            </ul>
+        </nav>
+      </header>
 <main>
     <h1>Order Summary</h1>
         <section class="cart-container">
@@ -29,10 +34,10 @@
             <img src="images/Square_Eyes_Cover6.jpeg" alt="The Addams Family movie poster" class="cartimg"> 
             <img src="images/Square_Eyes_Cover5.jpeg" alt="Sweetheart movie poster" class="cartimg">
             </div>
-            <div>
+            <div class="contain-item">
             <p class="cart-text">The Addams Family x1 $15</p>
             <br><p class="cart-text">Sweetheart x1 $15</p>
-            <div class="line"></div>
+            <br><div class="line"></div><br>
             <h2>Total $30</h2>
             <a href="success.html" class="cta">CHECKOUT</a>
             </div>
