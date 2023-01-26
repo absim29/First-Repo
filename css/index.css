@@ -66,6 +66,10 @@ body {
     background-color: #211e21;
     min-height: 100vh;
     margin: 0px;
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 * {
@@ -135,3 +139,4 @@ h3 {
     overflow: scroll;
     margin: 10px;
 }
+
