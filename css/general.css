@@ -5,10 +5,21 @@
 
 @import url(//db.onlinewebfonts.com/c/8dbb836081059e0f2e81eeeaec207c19?family=Contrail+One);
 
+:root {
+    --dark-grey: #211e21;
+    --light-grey: #aca2a2;
+    --dark-red: #810000;
+    --white: #fff;
+    --yellow: #FEDE36;
+    --font: 'Contrail One', Verdana, sans-serif;
+    --h-font: 'Papyrus', Verdana, sans-serif;
+    --italic: Italic;
+    --full-size: 100%;
+}
 
 /** Page reset **/
 html, body {
-    height: 100%;
+    height: var(--full-size);
     width: var(--main-width);
 }
 
@@ -24,16 +35,16 @@ nav ul li {
 }
 
 nav ul li a {
-    font-family: 'Contrail One ', Verdana, sans-serif;
+    font-family: var(--font);
     padding: 20px;
-    color: #fff;
+    color: var(--white);
     font-size: 20px;
     font-weight: bold;
 }
 
 label #btn,
 label #cancel {
-    color: #fff;
+    color: var(--white);
     font-size: 30px;
     float: right;
     margin-top: 10px;
@@ -57,7 +68,7 @@ nav .currentpage {
 
 header {
     background-image: url('../images/headerpic\ small.jpg');
-    max-width: 100%;
+    max-width: var(--full-size);
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 10px;
@@ -65,7 +76,7 @@ header {
 
 .header {
     background-image: url('../images/headerpic.jpg');
-    max-width: 100%;
+    max-width: var(--full-size);
     min-height: 80%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -75,7 +86,7 @@ header {
 
 /** General - body **/
 body {
-    background-color: #211e21;
+    background-color: var(--dark-grey);
     min-height: 100vh;
     max-height: 800px;
     margin: 0px;
@@ -100,49 +111,49 @@ body {
 
 /** Text styling **/
 h1 {
-    color: #810000;
-    font-family: 'Papyrus', Verdana, sans-serif;
+    color: var(--dark-red);
+    font-family: var(--h-font);
     font-size: 55px;
-    font-style: italic;
-    filter: drop-shadow(3px 3px 3px #211e21);
+    font-style: var(--italic);
+    filter: drop-shadow(3px 3px 3px var(--dark-grey));
     text-align: center;
 }
 
 .h1-home {
-    color: #810000;
-    font-family: 'Papyrus', Verdana, sans-serif;
+    color: var(--dark-red);
+    font-family: var(--h-font);
     font-size: 60px;
-    font-style: italic;
-    filter: drop-shadow(3px 3px 3px #211e21);
+    font-style: var(--italic);
+    filter: drop-shadow(3px 3px 3px var(--dark-grey));
     margin-top: 60px;
     text-align: left;
 }
 
 h2 {
-    font-family: 'Contrail One', Verdana, sans-serif;
-    color: #fff;
+    font-family: var(--font);
+    color: var(--white);
     font-size: 40px;
     text-align: left;
 }
 
 h3 {
-    color: #fff;
-    font-family: 'Contrail One', Verdana, sans-serif;
+    color: var(--white);
+    font-family: var(--font);
     font-size: 15px;
     text-align: center;
 }
 
 p {
-    font-family: 'Contrail One', Verdana, sans-serif;
-    color: #fff;
+    font-family: var(--font);
+    color: var(--white);
 }
 
 .p-home {
-    font-family: 'Contrail One', Verdana, sans-serif;
-    color: #fff;
+    font-family: var(--font);
+    color: var(--white);
     font-size: 25px;
     text-align: left;
-    filter: drop-shadow(3px 3px 3px #211e21);
+    filter: drop-shadow(3px 3px 3px var(--dark-grey));
 }
 
 .paragraf {
@@ -173,12 +184,12 @@ p {
 
 /** Footer **/
 .footer {
-    background: #aca2a2;
+    background: var(--light-grey);
     max-height: 50px;
     width: auto;
     text-align: center;
-    color: #000000;
-    font-family: 'Contrail One', Verdana, sans-serif;
+    color: #000;
+    font-family: var(--font);
     font-size: 18px;
     padding: 15px;
     margin: 0px;
@@ -187,7 +198,7 @@ p {
 
 /** Contact page form **/
 input, select, textarea {
-    border: 1px solid #211e21;
+    border: 1px solid var(--dark-grey);
     border-radius: 5px;
     display: inline-block;
     padding: 20px;
@@ -205,22 +216,22 @@ form > * {
 }
 
 .text {
-    font-family: 'Contrail One', Verdana, sans-serif;
-    color: #fff;
+    font-family: var(--font);
+    color: var(--white);
     font-size: 18px;
 }
 
 
 /** CTA - button **/
 .cta {
-    background-color: #810000;
-    color: #FEDE36;
+    background-color: var(--dark-red);
+    color: var(--yellow);
     font-size: 25px;
     font-family: 'verdana';
     font-weight: bold;   
     padding: 20px 80px;
     border-radius: 10px;
-    border: #810000;
+    border: var(--dark-red);
     filter: drop-shadow(1px 1px 1px #000);
     text-align: center;
     margin: 10px;
@@ -231,8 +242,8 @@ a {
 }
 
 .cta:hover {
-    background-color: #FEDE36;
-    color: #810000;
+    background-color: var(--yellow);
+    color: var(--dark-red);
 }
 
 #ctaproduct {
@@ -258,11 +269,11 @@ a {
 }
 
 .line {
-    border: 1px solid #fff;
+    border: 1px solid var(--white);
 }
 
 .aboutimage {
-    max-width: 100%;
+    max-width: var(--full-size);
     margin-top: auto;
 }
 
@@ -272,7 +283,7 @@ a {
 }
 
 .item:hover {
-    background: #aca2a2;
+    background: var(--light-grey);
     border-radius: 15px;
 }
 

@@ -41,7 +41,7 @@
     header {
         position: fixed;
         overflow: hidden;
-        width: 100%;
+        width: var(--full-size);
         top: 0;
         z-index: 1;
     }
@@ -53,10 +53,10 @@
     }
     ul {
         position: fixed;
-        width: 100%;
+        width: var(--full-size);
         height: 100vh;
         left: -100%;
-        background: #211e21;
+        background: var(--dark-grey);
         top: 70px;
         text-align: center;
         transition: all .5s;
@@ -91,7 +91,7 @@
         align-self: center;
     }
     .line {
-        width: 100%;
+        width: var(--full-size);
     }
     .img {
         padding: 15px;
@@ -126,23 +126,23 @@
     header {
         position: fixed;
         overflow: hidden;
-        width: 100%;
+        width: var(--full-size);
         top: 0;
         z-index: 1;
     }
     .header {
         min-height: 20%;
-        background-color: #211e21;
+        background-color: var(--dark-grey);
     }
     label #btn {
         display: block;
     }
     ul {
         position: fixed;
-        width: 100%;
+        width: var(--full-size);
         height: 100vh;
         left: -100%;
-        background: #211e21;
+        background: var(--dark-grey);
         top: 55px;
         text-align: center;
         transition: all .5s;
@@ -179,7 +179,7 @@
         margin: 10px;
     }
     .line {
-        width: 100%;
+        width: var(--full-size);
     }
     .img {
         padding: 15px;
