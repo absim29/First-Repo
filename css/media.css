@@ -13,7 +13,7 @@
 
 @media screen and (min-width: 751px) and (max-width: 900px) {
     .header {
-        min-height: 60%;
+        min-height: 40%;
     }
     nav ul li {
         line-height: 130px;
@@ -88,6 +88,7 @@
         align-items: center;
         gap: 10px;
         margin: 100px 10px 40px 10px;
+        align-self: center;
     }
     .line {
         width: 100%;
@@ -114,7 +115,7 @@
         margin-top: 20px;
     }
     .carousel {
-        margin-top: 230px;
+        margin-top: 280px;
     }
     .item {
         max-height: 300px;
@@ -192,7 +193,13 @@
         margin-top: 10%;
         font-size: 40px;
     }
-    .p-home {
+    h1 {
+        font-size: 40px;
+    }
+    .p-home, 
+    .about-text, 
+    .cart-text,
+    .prod-text {
         font-size: 20px;
     }
     #ctaproduct {
@@ -202,7 +209,7 @@
         margin-top: 20px;
     }
     .carousel {
-        margin-top: 230px;
+        margin-top: 300px;
     }
     .imghome {
         max-height: 360px;

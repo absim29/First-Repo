@@ -5,13 +5,15 @@
 
 @import url(//db.onlinewebfonts.com/c/8dbb836081059e0f2e81eeeaec207c19?family=Contrail+One);
 
-/* Page reset */
+
+/** Page reset **/
 html, body {
     height: 100%;
     width: var(--main-width);
 }
 
-/* Navigation - header section*/
+
+/** Navigation - header section **/
 nav ul { 
     float: right;
 }
@@ -61,7 +63,17 @@ header {
     border-radius: 10px;
 }
 
-/* General - body */
+.header {
+    background-image: url('../images/headerpic.jpg');
+    max-width: 100%;
+    min-height: 80%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+
+/** General - body **/
 body {
     background-color: #211e21;
     min-height: 100vh;
@@ -79,7 +91,14 @@ body {
     text-decoration: none;
 }
 
-/* Text styling */
+.main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+/** Text styling **/
 h1 {
     color: #810000;
     font-family: 'Papyrus', Verdana, sans-serif;
@@ -89,6 +108,16 @@ h1 {
     text-align: center;
 }
 
+.h1-home {
+    color: #810000;
+    font-family: 'Papyrus', Verdana, sans-serif;
+    font-size: 60px;
+    font-style: italic;
+    filter: drop-shadow(3px 3px 3px #211e21);
+    margin-top: 60px;
+    text-align: left;
+}
+
 h2 {
     font-family: 'Contrail One', Verdana, sans-serif;
     color: #fff;
@@ -96,9 +125,30 @@ h2 {
     text-align: left;
 }
 
+h3 {
+    color: #fff;
+    font-family: 'Contrail One', Verdana, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
 p {
     font-family: 'Contrail One', Verdana, sans-serif;
     color: #fff;
+}
+
+.p-home {
+    font-family: 'Contrail One', Verdana, sans-serif;
+    color: #fff;
+    font-size: 25px;
+    text-align: left;
+    filter: drop-shadow(3px 3px 3px #211e21);
+}
+
+.paragraf {
+    position: relative;
+    margin-top: 0;
+    margin-left: 5%;
 }
 
 .about-text {
@@ -111,7 +161,17 @@ p {
     text-align: left;
 }
 
-/* Footer */
+
+/** Carousel **/
+.carousel {
+    position: relative;
+    white-space: nowrap;
+    overflow: scroll;
+    margin: 10px;
+}
+
+
+/** Footer **/
 .footer {
     background: #aca2a2;
     max-height: 50px;
@@ -124,7 +184,8 @@ p {
     margin: 0px;
 }
 
-/* Contact page form*/
+
+/** Contact page form **/
 input, select, textarea {
     border: 1px solid #211e21;
     border-radius: 5px;
@@ -149,7 +210,8 @@ form > * {
     font-size: 18px;
 }
 
-/* CTA - button */
+
+/** CTA - button **/
 .cta {
     background-color: #810000;
     color: #FEDE36;
@@ -178,7 +240,8 @@ a {
     margin-left: auto;
 }
 
-/* Image styling */
+
+/** Image styling **/
 .img {
     max-width: fit-content;
     max-height: fit-content;
@@ -200,10 +263,10 @@ a {
 
 .aboutimage {
     max-width: 100%;
-    margin: auto;
+    margin-top: auto;
 }
 
-/* Movie hover */
+/** Movie hover **/
 .item {
     padding: 10px;
 }
@@ -213,7 +276,8 @@ a {
     border-radius: 15px;
 }
 
-/* Content containers */
+
+/** Content containers **/
 .container {
     display: flex;
     max-width: 1000px;
